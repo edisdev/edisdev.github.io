@@ -83,6 +83,7 @@ body {
 .sideHeader.stickyHeader {
   box-shadow: 10px 5px 10px #000;
 }
+
 .sideHeader .left {
   display: flex;
   align-items: center;
@@ -125,6 +126,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
+  align-items: center;
 }
 
 .sideHeader .right .social {
@@ -135,6 +137,11 @@ body {
   color: -webkit-linear-gradient(#FF8907, #E64349);
 }
 
+.sideHeader .right .coder {
+  height: 70px;
+  object-fit: contain;
+  margin-left: 10px;
+}
 .section {
   width: 100%;
   margin-top: 100px;
@@ -203,6 +210,13 @@ body {
   border-top: 1px solid var(--border-color);
   margin-top: 100px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sideFooter .githubLink {
+  margin-left: 10px;
+  color: #FF8907;
 }
 
 .sideFooter .openSource {
