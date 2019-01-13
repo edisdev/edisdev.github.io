@@ -1,0 +1,207 @@
+:root {
+  --border-color: #232021;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #110F19;
+  color: #fff;
+  font-family: 'BrandonText', sans-serif;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-left: 1px solid var(--border-color);
+  cursor: pointer;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF8907; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E64349; 
+}
+
+
+::selection {
+  background: #FF8907;
+  color: #fff;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+
+.sideHeader {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  background: #110F19;
+  z-index: 99999;
+}
+.sideHeader.stickyHeader {
+  box-shadow: 10px 5px 10px #000;
+}
+.sideHeader .left {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.sideHeader .left .homeLink {
+  font-weight: bold;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.sideHeader .left .homeLink strong {
+  background: -webkit-linear-gradient(#FF8907, #E64349);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-variant: small-caps;
+}
+
+.sideHeader .left .homeLink span {
+  color: #FF8907;
+  font-size: 10px;
+  font-family: cursive;
+  align-self: flex-end;
+}
+
+.sideHeader .right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.sideHeader .right .social {
+  background: -webkit-linear-gradient(#FF8907, #E64349);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: -webkit-linear-gradient(#FF8907, #E64349);
+}
+
+.section {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.section .title {
+  text-align: center;
+  background: -webkit-linear-gradient(#FF8907, #E64349);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  font-variant-caps: small-caps;
+  border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF8907), to(#E64349)) 10% 1;
+  -webkit-border-image: -webkit-linear-gradient(#FF8907, #E64349) 100% 1;
+  -moz-border-image: -moz-linear-gradient(#FF8907, #E64349) 100% 1;
+  -o-border-image: -o-linear-gradient(#FF8907, #E64349) 100% 1;
+  border-image: linear-gradient(#FF8907, #E64349) 100% 1;
+  border-width: 0 0 6px 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.section .content {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #c2c2c2;
+}
+
+.section .content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+}
+
+.section .content .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 30px;
+}
+
+.section .content .projects .item .item_title {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+.section .content .projects .item img{
+  max-width: 100%;
+}
+
+.section .content .projects .item .description a{
+  color: #FF8907;
+}
+
+
+.sideFooter {
+  border-top: 1px solid var(--border-color);
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.sideFooter .openSource {
+  text-align: center;
+  text-transform: uppercase;
+}

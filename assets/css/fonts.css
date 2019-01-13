@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/assets/fonts/Brandon/BrandonText-Light.otf');
+  font-weight: 300
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/assets/fonts/Brandon/BrandonText-Medium.otf');
+  font-weight: normal
+}
+
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/assets/fonts/Brandon/BrandonText-Regular.otf');
+  font-weight: 500
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/assets/fonts/Brandon/BrandonText-Bold.otf');
+  font-weight: bold
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/assets/fonts/Brandon/BrandonText-Black.otf');
+  font-weight: 900
+}
