@@ -110,7 +110,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 30px;
+  font-size: 1.5em;
   font-variant: small-caps;
 }
 
@@ -176,7 +176,7 @@ body {
 
 .section .content .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 30px;
 }
 
@@ -188,6 +188,10 @@ body {
 }
 .section .content .projects .item img{
   max-width: 100%;
+}
+
+.section .content .projects .item .description {
+  word-break: break-all;
 }
 
 .section .content .projects .item .description a{
