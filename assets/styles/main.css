@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-animation: color .6s,background-color .6s;
+  --font-size-sm: 0.8em;
+  --font-size: 18px;
+  --font-size-lg: 1.2em;
+  --font-size-xl: 1.4em;
+  --gap-xs: 5px;
+  --gap-sm: 10px;
+  --gap: 20px;
+}
+
+
+@font-face {
+  font-family: 'Baloo 2';
+  src: url('/fonts/Baloo2-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/fonts/Baloo2-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/fonts/Baloo2-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/fonts/Baloo2-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'BrandonText';
+  src: url('/fonts/Baloo2-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: var(--font-size);
+  background: var(--app-color);
+  color: var(--text);
+  line-height: normal;
+  letter-spacing: normal;
+  transition: var(--theme-animation);
+}
+
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.btn {
+  width: max-content;
+  height: max-content;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.intro {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+}
+
+.intro,
+.social {
+  font-size: var(--font-size-lg);
+}
+
+.main {
+  margin-bottom: calc((var(--gap) *2) + 40px);
+}
+
+
+.intro .whoami p {
+  margin-bottom: var(--gap-sm);
+  line-height: 35px;
+}
+
+.intro .edisdev {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.intro .edisdev .edisdev_img{
+  border-radius: 100%;
+  width: 8em;
+  height: 8em;
+  object-fit: cover;
+  border: 3px solid var(--text);
+}
+
+
+.line::after {
+  content: "";
+  width: 100%;
+  height: calc(1em / 6);
+  background: var(--text-hover);
+  display: block;
+  border-radius: 1em;
+}
+
+
+.social .social_link {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: var(--gap-sm);
+}
+
+
+.social .social_link::after {
+  content: ".";
+  margin-left: var(--gap-xs);
+}
+
+
+.social .social_link:first-child {
+  margin-bottom: 10px;
+}
+
+.social .social_link a {
+  margin-left: var(--gap-xs);
+}
+
+.social .social_link a {
+  font-weight: 600;
+  line-height: 25px;
+  display: inline-block;
+}
+
+.social .social_link a:hover {
+  color: var(--text-hover);
+  opacity: .8;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid var(--text-secondary);
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+  background: var(--app-color-secondary);
+  transition: var(--theme-animation);
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-content .left .icon-heart {
+  color: var(--text-hover);
+}
+
+.footer .footer-content .btn {
+  font-size: var(--font-size-lg);
+  line-height: 0;
+  color: inherit;
+}
+
+
+@media only screen and (max-width: 480px) {
+  :root {
+    --font-size: 15px;
+  }
+
+  .social .social_link {
+    display: block;
+  }
+}

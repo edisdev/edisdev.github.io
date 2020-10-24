@@ -1,125 +1,95 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ailenizin Minnak Developer'ı 🤓</title>
-  <link rel="stylesheet" href="assets/css/fonts.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132405601-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <title>Edisdev</title>
 
-    gtag('config', 'UA-132405601-1');
-  </script>
-
+  <link id="cssvariable" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
-  <header lang="en" class="sideHeader" id="header">
-    <div class="left">
-      <a href="/" class="homeLink">
-        <strong>Coder Mathematician</strong>
-        <span>Ailenizin Minnak Developer'ı</span>
-      </a>
-    </div>
-    <div class="right">
-      <p class="social">@edisdev</p>
-      <img class="coder" src="assets/img/coder.jpg" alt="edisdev">
-    </div>
-  </header>
-  <main class="container">
-    <section class="section">
-      <h1 class="title">Kimdir ?</h1>
-      <div class="content">
-        <p>Matematik Bölümü mezunu , yazılıma , bilime ve teknolojiye aşık biri :)</p>
-        <p>Hikayesi mi ?</p>
-        <p>
-          5–6 yaşındayken masa başına oturup o kenarları klavye olarak hayal eden , o şekilde parmaklarını çatır çutur
-          oynatan bir çocukluğa sahip birisinin, üniversite sınavına girerken ki en büyük hayali “Bilgisayar Mühendisi”
-          olmaktı elbette .. Taa ki o sınav sonuçlarının istenmeyen bir şekilde gelmesine kadar.. (Daha doğrusu ben öyle sanıyordum o zamanlar.)
-        </p>
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-IcoMoon" viewBox="0 0 32 32">
+        <path
+          d="M8.111 16c0-2.044 1.657-3.701 3.701-3.701s3.701 1.657 3.701 3.701c0 2.044-1.657 3.701-3.701 3.701s-3.701-1.657-3.701-3.701zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16c8.836 0 16-7.163 16-16s-7.163-16-16-16zM11.856 29.978c-4.811-2.799-8.046-8.010-8.046-13.978s3.235-11.178 8.046-13.978c4.813 2.799 8.050 8.009 8.050 13.978s-3.237 11.179-8.050 13.978z">
+        </path>
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 32 32">
+        <path
+          d="M16 26c1.105 0 2 0.895 2 2v2c0 1.105-0.895 2-2 2s-2-0.895-2-2v-2c0-1.105 0.895-2 2-2zM16 6c-1.105 0-2-0.895-2-2v-2c0-1.105 0.895-2 2-2s2 0.895 2 2v2c0 1.105-0.895 2-2 2zM30 14c1.105 0 2 0.895 2 2s-0.895 2-2 2h-2c-1.105 0-2-0.895-2-2s0.895-2 2-2h2zM6 16c0 1.105-0.895 2-2 2h-2c-1.105 0-2-0.895-2-2s0.895-2 2-2h2c1.105 0 2 0.895 2 2zM25.899 23.071l1.414 1.414c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0l-1.414-1.414c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0zM6.101 8.929l-1.414-1.414c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l1.414 1.414c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0zM25.899 8.929c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l1.414-1.414c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-1.414 1.414zM6.101 23.071c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-1.414 1.414c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l1.414-1.414z">
+        </path>
+        <path
+          d="M16 8c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.418 0 8-3.582 8-8s-3.582-8-8-8zM16 21c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5z">
+        </path>
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 32 32">
+        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
+      </symbol>
+    </defs>
+  </svg>
 
-        <p>
-          Sınav sonuçlarıyla beraber tercih zamanı tekrar derin bir düşünce almıştı .. Bilgisayarlardan sonra en çok
-          sevdiğim şey neydi .. Aklıma tek cevap geliyordu .. MATEMATİK .. Yaptığım tercihler sonrasında Karabük
-          Üniversitesi Matematik Bölümüne yerleştim .. Hazırlık sınıfından sonra bölüm derslerine başladığımızda
-          araştırmalar yapıyordum , Matematik bölüme geldik iyi güzel de ya mezuniyet sonrasında ne olacak ? İş
-          olanakları vs.. Bakıyordum, okuyordum , öğretmenlik, bankacılık vs.. Bunlar da çok güzel meslekler kimse
-          yanlış anlamasın ama “Bunlar , bana göre mi?” diye sorduğumda her defasında “Hayır “ cevabını alıyordum
-          içimdeki sesten , gönlümden .. Benim farklı birşeyler yapmam lazımdı .. 2.sınıfa geçmiştik artık .. Daha önce
-          nedendir bilmem bölüm derslerimizde ileri ki senelerde neler var hiç bakmamıştım .. Ve sene başında
-          öğrenmiştim ki Bilgisayar Programlama dersimiz vardı . Bu belki de benim için olabilecek en güzel şeylerden
-          biriydi . Yine “Bilgisayar Mühendisliği” hayalleri yeşermişti gönlümde .. İlk dönem alttan derslerimden
-          dolayı dersi alamayıp ikinci dönem bu yüzden belki başarısız olsam da , ilerleyen senelerde en çok çalıştığım
-          ders ( veya dersler ) olacaktı.. Pascaldı, C idi , Ayrık Matematikte gördüğümüz graph algoritmalarıydı derken,
-          aslında giriş seviyesi de olsa yazılım öğreniyorduk. Ve bunları öğrendikçe hem ben aydınlanıyordum
-          hem de tüm derslerim çok kötüden iyiye gidiyordu ..
-        </p>
-
-        <p>Son seneye geldiğimizde üniversitemizin Bilişim Kulübünün yaptığı etkinlikle bir aydınlama daha yaşadım ..
-          Çok iyi yazılımcılarla tanıştım .. Artık kesindi kararım .. Yazılımcı olacaktım .. Bölüm arkadaşlarım
-          öğretmenlik için formasyon derslerinde koşuştururken , ben kimseyi dinlemeyip yazılım peşinden gidiyordum ..
-          Okulda her an  bilgisayarım yanımdaydı... Öğle arası , ders boşlukları artık yazılım ile ilgili bir şeyler
-          araştırma ile geçiyordu hep .. Ve senenin sonuna doğru Sayılar Teorisi dersinde hocamızın “Hatice, R.S.A
-          şifreleme ile ilgili bir uygulama yazabilir misin? “ demesi ve bunu başarmış olmam ile bir kez daha doğru
-          yolda olduğumu anladım ve bu inancımı daha da çok artırdı .. Daha çok çalışmaya, çabalamaya devam ettim
-        </p>
-
-        <p>Şuan ise, <strong>PROTEL</strong>'de Front-End Developer olarak görev almaktayım :)</p>
-      </div>
-    </section>
-    <section class="section">
-      <h2 class="title">Neler Yapmıştır ?</h2>
-      <div class="content">
-        <div class="projects">
-          <div class="item">
-            <h3 class="item_title">Periyodik Tablo</h3>
-            <img src="https://github.com/edisdev/periodic-table/blob/master/resources/periodic-table-dark-mode.png?raw=true"
-              alt="periodic table">
-            <p class="description">
-              Kimya derslerinde öğretmenlerimizin işini kolaylaştıracak bir proje. Periyodik Tablodaki elementler ve
-              özelliklerini görebileceği bir proje :)
-              <a href="https://github.com/edisdev/periodic-table" target="_blank">Github'tan Bak :)</a>
-            </p>
-          </div>
-          <div class="item">
-            <h3 class="item_title">Datepicker Component For Vue Js</h3>
-            <img src="https://github.com/edisdev/vue-datepicker-ui/raw/master/resources/rangepicker.png?raw=true" alt="datepicker component">
-            <p class="description">
-              Vue Js Frameworkü ile kullanılabilecek bir datepicker componenti. ( Ayrıca projede yer alan datepicker.js
-              (https://github.com/edisdev/vue-datepicker-ui/blob/master/src/components/datepicker.js) başka
-              frameworkler ile kullanabilecek şekildedir.)
-              <a href="https://github.com/edisdev/vue-datepicker-ui" target="_blank">Github'tan Bak :) </a>
-            </p>
-          </div>
+  <main class="main">
+    <section class="intro">
+      <div class="container">
+        <div class="edisdev">
+          <img src="./assets/images/edisdev.jpg" class="edisdev_img">
+        </div>
+        <div class="whoami">
+          <p>Hello Mate! My name is Hatice.</p>
+          <p>I'm a software developer and a mathematician. I have been working on software development since 2015. But I
+            started professionally developing software in 2017.
+            Most of this time has passed in the area of ​​Front-End development.
+          </p>
+          <p>I live in Turkey / Istanbul. I love the sea of Istanbul, it's make me happy.</p>
+          <p>I love build open-source code, learning new things, resolve difficualt and diffirent problems.</p>
         </div>
       </div>
     </section>
-  </main>
-  <footer class="sideFooter">
-    <h4 lang="en" class="openSource">i love open source </h4>
-    <a class="githubLink" href="https://github.com/edisdev" target="_blank"> ❤️ github  ❤️</a>
-  </footer>
-</body>
 
-<script>
-  const scrollHeigth = window.pageYOffset
-  window.addEventListener('scroll', function (e) {
-    const scrollHeigth = window.pageYOffset
-    console.log(scrollHeigth)
-    if (scrollHeigth === 0) {
-      document.getElementById('header').classList.remove('stickyHeader')
-    } else {
-      document.getElementById('header').classList.add('stickyHeader')
-    }
-  })
-</script>
+    <section class="social">
+      <div class="container social_link">
+        <span>You can follow me on </span>
+        <a class="line" target="_blank" href="https://twitter.com/edisdev">Twitter</a>
+        <a class="line" target="_blank" href="https://github.com/edisdev">Github</a>
+      </div>
+      <div class="container social_link">
+        <span>For read my</span>
+        <a class="line" target="_blank" href="https://medium.com/@edisdev">medium articles</a>
+      </div>
+      <div class="container social_link">
+        <span>You can send me your questions and things you wonder about on</span>
+        <a class="line" target="_blank" href="mailto:hedis285@gmail.com">e-mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="left">
+          <small>
+            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+            <span>Coding is happiness</span>
+            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+          </small>
+        </div>
+        <div class="right">
+          <button type="button" class="btn" onclick="setTheme()">
+            <svg id="themeSVG" class="icon">
+              <use xlink:href="#icon-IcoMoon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
 
 </html>
