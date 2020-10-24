@@ -112,7 +112,6 @@ a {
 
 .intro .whoami p {
   margin-bottom: var(--gap-sm);
-  line-height: 35px;
 }
 
 .intro .edisdev {
